@@ -8,6 +8,7 @@ import Monitor from '/monitor.png';
 import Location from '/location.png';
 import Love from '/love.png';
 import Hero3 from '/hero3.jpg';
+import Brochure from '/YCW Educator Brochure.pdf';
 import './styles.scss';
 
 const HomePage = () => {
@@ -23,6 +24,18 @@ const HomePage = () => {
 			setImgURL(imgURL < 9 ? imgURL + 1 : 1)
 		}, 5000);		  
 	  }, [imgURL]);
+
+	  const fetchBrochure = () => {
+		fetch(Brochure).then(response => {
+		  response.blob().then(blob => {
+			  const fileURL = window.URL.createObjectURL(blob);
+			  let alink = document.createElement('a');
+			  alink.href = fileURL;
+			  alink.download = 'ycw_brochure.pdf';
+			  alink.click();
+		  })
+		})
+	  }
 
 	return (
 		<>
@@ -56,8 +69,8 @@ const HomePage = () => {
 						</a>
 					</div>
 					<div className="btn-container">
-						<div className="brochure-btn"><a href="">DIGITAL BROCHURE</a></div>
-						<div className="ratings-btn"><a href="">APP & GAME RATINGS</a></div>
+						<div className="brochure-btn" onClick={fetchBrochure}><span>DIGITAL BROCHURE</span></div>
+						<div className="ratings-btn"><span>APP & GAME RATINGS</span></div>
 					</div>
 				</div>
 			</div>

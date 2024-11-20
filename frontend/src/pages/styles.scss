@@ -202,18 +202,19 @@ body {
             position: relative;
     
             .brochure-btn {
-                a {
+                span {
                     background-color: #0076ff;
                 }
             }
     
             .ratings-btn {
-                a {
+                span {
                     background-color: #4b8b2a;
                 }
             }
             
             .brochure-btn, .ratings-btn {
+                cursor: pointer;
                 font-size: 15px;
                 font-weight: 900;
                 width: 200px;
@@ -221,7 +222,7 @@ body {
                 display: flex;
                 transition: all .5s;
         
-                a {
+                span {
                     color: white;
                     padding: 15px 30px;
                     border: 1px solid transparent;
@@ -232,7 +233,7 @@ body {
                     transition: color .2s ease-out, background-color .2s ease-out, padding .5s, font-size .5s, margin .5s;
                 }
     
-                &:hover a {
+                &:hover span {
                     border: 1px solid #0076ff;
                     color: #0076ff;
                     background-color: rgba(0,0,0,.6);
@@ -243,7 +244,7 @@ body {
                 .brochure-btn, .ratings-btn {
                     width: 170px;
 
-                    a {
+                    span {
                         font-size: 10px;
                         margin: 0;
                     }
@@ -930,6 +931,10 @@ body {
 
         &.text-container-pair {
             display: flex;
+
+            .text-pair {
+                margin: 0;
+            }
         }
 
         @media (max-width: 1000px) {
