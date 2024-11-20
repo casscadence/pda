@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import COD from '/cod.jpg';
+import CODB from '/cod2.jpg';
 import './styles.scss';
 
 const CallOfDutyPage = () => {
@@ -19,8 +20,33 @@ const CallOfDutyPage = () => {
 					</div>
 				</div>
 				<div className="text-container">
+					<div className="text text-full">
+						<h3>Call of Duty: Blood, Gore, Language, 18+</h3>
+						<h3>“Blood and Gore. Intense Violence, Strong Language, Suggestive Themes, Use of Drugs”</h3>
+					</div>
+				</div>
+				<div className="text-container">
 					<div className="text">
-						<p>Each game in the series has its own unique features, yet here’s a general guide on how to play Call of Duty, along with strategies, objectives, and information about the newer series:</p>
+						<p className="paragraph">
+						Call of Duty, a Violent Game, is Highly Addictive. My son moved back to Tallahassee at 18, extremely addicted to this game. He became involved with tech work and sales, and later school, maybe playing 2 or 3 hours at night. 
+						Joel moved 13 months later to Oklahoma for a promised “really good job”. The boss, his online friend, said he could live with him free, since the company paid for a 2 bedroom house for him. 
+						The company downsized 6 weeks later. He fell back into his gaming habits, except this time, he went extreme. He played this game and the World of Warcraft, according to Chris, his roommate, “about 75-80 hours over 4 days, before he took his life. 
+						A 14 year old kid in Canada, was playing online with him. When Joel said he was depressed about the job situation and girlfriend breakup, this kid encouraged him for almost an hour, to take his life. Remember Joel, you can come back with another life instantly, we do this all the time. (I have the police transcripts) I saw Joel somewhat lose himself in those two games. With no parental influence nor monitoring, he lost himself.  
+						</p>
+					</div>
+					<div className="call-of-duty-image">
+						<img src={CODB}/>
+					</div>
+				</div>
+				<div className="text-container">
+					<div className="facebook-image facebook-image-alt">
+						<img src=""/>
+					</div>
+					<div className="text text-alt">
+						<p>
+						</p>
+						<p className="second-paragraph">
+						</p>
 					</div>
 				</div>
 				<div className="text-container text-container-pair">

@@ -19,8 +19,8 @@ const Navbar = () => {
 				<ul className="nav-pages">
 					<div className="page-title-container">
 						<li className="page-title" data-item='ABOUT'><Link to={"/"}>ABOUT</Link></li>
-						<li className="page-title" data-item='APPS'><Link to={"/"}>APPS</Link></li>
-						<li className="page-title" data-item='GAMES'><Link to={"/"}>GAMES</Link></li>
+						<li className="page-title" data-item='APPS'><Link to={"/facebook"}>APPS</Link></li>
+						<li className="page-title" data-item='GAMES'><Link to={"/call-of-duty"}>GAMES</Link></li>
 						<li className="page-title" data-item='BLOGS'><Link to={"/"}>BLOGS</Link>
 							<ul className="blogs-dropdown">
 								<li><a href="#">Youths Now Under 20</a></li>

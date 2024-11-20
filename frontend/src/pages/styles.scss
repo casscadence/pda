@@ -727,10 +727,13 @@ body {
             }
             
             h3 {
-                font-size: 24px;
+                font-size: 1.5vw;
                 font-weight: 700;
-                text-align: right;
-                color: #0076ff;
+                //text-align: right;
+                //color: #0076ff;
+                color: black;
+                width: 80%;
+                margin: auto;
             }
     
             p {
@@ -811,6 +814,21 @@ body {
                     left: 37%;
                     font-size: 30px;
                     font-family: 'Anton';
+                }
+            }
+
+            &.text-full {
+                width: 100%;
+                margin-bottom: 100px;
+
+                h3 {
+                    width: 90%;
+                    font-weight: 900;
+                    margin-bottom: 1vw;
+                }
+
+                p {
+                    width: 100%;
                 }
             }
         }
