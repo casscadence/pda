@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import COD from '/cod.jpg';
 import CODB from '/cod2.jpg';
+import CODC from '/cod3.jpg';
+import CODD from '/cod4.jpg';
 import './styles.scss';
 
 const CallOfDutyPage = () => {
@@ -28,10 +30,9 @@ const CallOfDutyPage = () => {
 				<div className="text-container">
 					<div className="text">
 						<p className="paragraph">
-						Call of Duty, a Violent Game, is Highly Addictive. My son moved back to Tallahassee at 18, extremely addicted to this game. He became involved with tech work and sales, and later school, maybe playing 2 or 3 hours at night. 
-						Joel moved 13 months later to Oklahoma for a promised “really good job”. The boss, his online friend, said he could live with him free, since the company paid for a 2 bedroom house for him. 
-						The company downsized 6 weeks later. He fell back into his gaming habits, except this time, he went extreme. He played this game and the World of Warcraft, according to Chris, his roommate, “about 75-80 hours over 4 days, before he took his life. 
-						A 14 year old kid in Canada, was playing online with him. When Joel said he was depressed about the job situation and girlfriend breakup, this kid encouraged him for almost an hour, to take his life. Remember Joel, you can come back with another life instantly, we do this all the time. (I have the police transcripts) I saw Joel somewhat lose himself in those two games. With no parental influence nor monitoring, he lost himself.  
+							Call of Duty advertises their games this way:
+							<b>“Blood and Gore. Intense Violence, Strong Language, Suggestive Themes, Use of Drugs”. </b>
+							This first-person shooter video game, out in 2003, initially focused on games set in World War II. <b> Time brought the environment of the Cold War. Then, it evolved into futuristic worlds and the modern day battle-field.</b>
 						</p>
 					</div>
 					<div className="call-of-duty-image">
@@ -39,14 +40,31 @@ const CallOfDutyPage = () => {
 					</div>
 				</div>
 				<div className="text-container">
-					<div className="facebook-image facebook-image-alt">
-						<img src=""/>
+					<div className="call-of-duty-image call-of-duty-image-alt">
+						<img src={CODC}/>
 					</div>
 					<div className="text text-alt">
 						<p>
+							<b>Call of Duty, a Violent Game, is Highly Addictive.</b> My son moved back to Tallahassee at 18, <b>extremely addicted to this game.</b> He became involved with tech work and sales, and later school, <b> maybe playing 2 or 3 hours at night. </b>
+							Joel moved 13 months later to Oklahoma for a promised “really good job”. The boss, his online friend, said he could live with him free, since the company paid for a 2 bedroom house for him. 
 						</p>
 						<p className="second-paragraph">
+							The company downsized 6 weeks later. He fell back into his gaming habits, except this time, he went extreme. <b>He played this game and the World of Warcraft, according to Chris, his roommate, “about 75-80 hours over 4 days, before he took his life. </b>
+							A 14 year old kid in Canada, was playing online with him. <b>When Joel said he was depressed about the job situation and girlfriend breakup, this kid encouraged him for almost an hour, to take his life.</b> Remember Joel, you can come back with another life instantly, we do this all the time. (I have the police transcripts) I saw Joel somewhat lose himself in those two games. <b>With no parental influence nor monitoring, he lost himself. </b> 
 						</p>
+					</div>
+				</div>
+				<div className="text-container">
+					<div className="text">
+						<p>
+							Most want to play in the Virtual World, being plugged in, online, with others from around the world. This game has many offshoots and versions, all violent, unrelenting, and as lifelike as the current technology allows. 
+							You are encouraged to partner with others around the world, to win various skirmishes and small battles.  
+							This means that the Laptop/Desktop/iPad that is being used to facilitate these extreme war games is essentially plugged into a server that could be anywhere, Germany, China, Brussels.  
+							You can see the dangers this Game Offers. They show discernment drawing in today’s youth by their graphic advertisement.
+						</p>
+					</div>
+					<div className="call-of-duty-image">
+						<img src={CODD}/>
 					</div>
 				</div>
 				<div className="text-container text-container-pair">
